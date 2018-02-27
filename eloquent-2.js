@@ -11,19 +11,10 @@ for (var number = 0; number <= 100; number++)
 
 console.log(result || number);}
 
-//chess board Couldn't figure this one out so I had to look the solution up. 
-var size = 8;
+//While revising I solved it myself. Guess I have learned a bit of Javascript.  
 
-var board = "";
-
-for (var y = 0; y < size; y++) {
-  for (var x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0)
-      board += " ";
-    else
-      board += "#";
-  }
-  board += "\n";
-}
-
-console.log(board);
+for (var number = 0; number < 8; number++) 
+  { var result = "";
+  if (number % 2 !== 0) result = "# # # #";
+  if (number % 2 == 0) result =  " # # # #";
+console.log(result);}
