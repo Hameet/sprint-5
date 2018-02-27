@@ -7,7 +7,7 @@ for (var number = 0; number <= 100; number++)
   { var result = "";
   if (number % 3 == 0) result = "Fizz";
   if (number % 5 == 0) result = "Buzz";
-  if (number % 3 == 0 || number % 5 == 0) result = "FizzBuzz"; 
+  if (number % 3 == 0 && number % 5 == 0) result = "FizzBuzz"; 
 
 console.log(result || number);}
 
